@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Font poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+  
+}
+
+/*-----------------
+     Banner style 
+--------------------*/
+
+.container{
+    display: flex;
+    height: 677px;
+    background: #2D25A0;
+}
+.container:hover img{
+    transform: rotate(360deg);
+    transition: transform 1.2s ease-in-out;
+}
+.banner-title{
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 207px 102px 200px 156px;
+}
+.btn{
+    background: #E02C6D;
+    color: #FFFFFF;
+    padding: 10px 8px 10px 24px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.btn .fas{
+    font-size: 16px;
+    margin: 10px 15px 10px 8px;
+    padding:5px;
+}
+
+.banner img{
+    width: 556.01px;
+    height: 438px;
+    margin: 135px 150px 114px 150px;
+}
+
+
+
+
+
+
+
+/* ----------------
+   Players-details
+------------------ */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.players-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px ;
+    margin-top: 70px;
+}
+.football-player{
+    width: 330px;
+    height: 474px;
+    margin: 0 10px 0 10px;
+    
+}
+
+.player{
+    width: 300px;
+    height: 426px;
+    box-shadow: -5px -5px 30px #cfcbcb,5px 5px 30px #d1cece;
+    padding: 15px;
+}
+
+.player-image img{
+    width: 300px;
+    height: 256px;
+}
+
+.player-info h3{
+    font-size: 28px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    color: #18191F;
+
+}
+.player-info p{
+    color: #6C6C6C;
+    font-size: 16px;
+}
