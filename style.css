@@ -18,6 +18,7 @@ body{
 
 .container{
     display: flex;
+    width: 100%;
     height: 677px;
     background: #2D25A0;
 }
@@ -56,32 +57,33 @@ body{
 
 
 
-/* ----------------
-   Players-details
------------------- */
+/* -----------------------
+   Players-details style
+-------------------------- */
 
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .players-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 30px ;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
     margin-top: 70px;
 }
 .football-player{
     width: 330px;
     height: 474px;
-    margin: 0 10px 0 10px;
     
 }
 
 .player{
     width: 300px;
     height: 426px;
-    box-shadow: -5px -5px 30px #cfcbcb,5px 5px 30px #d1cece;
+    box-shadow: -5px -5px 30px #e2dfdf,5px 5px 30px #e2dfdf;
     padding: 15px;
 }
 
@@ -100,4 +102,40 @@ main{
 .player-info p{
     color: #6C6C6C;
     font-size: 16px;
+}
+
+
+/* ------------------
+    socialize style 
+---------------------*/
+
+.socialize{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo img{
+    width: 483.87px;
+    height: 110px;
+    margin-bottom: 20px;
+}
+.social-icons{
+
+}
+
+.fab{
+    font-size: 30px;
+    color: #969BAB;
+    background-color: #E7E7E8;
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 18.5px;
+}
+footer{
+    color: #000000;
+    margin-top: 20PX;
+    font-size: 18px;
+    font-weight: 400;
 }
